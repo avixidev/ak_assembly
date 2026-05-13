@@ -1556,3 +1556,192 @@ footer{
     font-size:16px;
   }
 }
+/* =========================
+   MOBILE OPTIMIZATION
+========================= */
+
+@media (max-width: 768px) {
+
+  /* GENERAL */
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .section,
+  .hero,
+  .feature,
+  .contact,
+  .hours,
+  .areas {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  /* HERO */
+
+  .hero {
+    min-height: 78vh;
+    padding-top: 120px;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero-content h1 {
+    font-size: clamp(2.3rem, 8vw, 4rem);
+    line-height: 0.95;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* NAVBAR */
+
+  .navbar {
+    padding: 14px 18px;
+    border-radius: 18px;
+  }
+
+  nav {
+    gap: 14px;
+  }
+
+  nav a {
+    font-size: 0.85rem;
+  }
+
+  .logo span {
+    font-size: 0.95rem;
+  }
+
+  /* MOBILE SLIDERS */
+
+  .service-grid,
+  .pricing-grid,
+  .gallery-grid {
+
+    display: flex;
+    overflow-x: auto;
+
+    gap: 18px;
+
+    scroll-snap-type: x mandatory;
+
+    padding-bottom: 10px;
+
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .service-grid::-webkit-scrollbar,
+  .pricing-grid::-webkit-scrollbar,
+  .gallery-grid::-webkit-scrollbar {
+    display: none;
+  }
+
+  .service-card,
+  .price-card {
+
+    min-width: 78%;
+
+    flex: 0 0 auto;
+
+    scroll-snap-align: center;
+  }
+
+  .gallery-grid img {
+
+    min-width: 92%;
+
+    flex: 0 0 auto;
+
+    scroll-snap-align: center;
+
+    border-radius: 24px;
+  }
+
+  /* FEATURE SECTION */
+
+  .feature {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .feature-image img {
+    height: 300px;
+  }
+
+  /* HOURS */
+
+  .hours-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  /* CONTACT */
+
+  .contact-box {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 30px 24px;
+  }
+
+  .contact-info {
+    order: 2;
+  }
+
+  .quote-form {
+    order: 1;
+  }
+
+  .contact-info h2 {
+    font-size: 2rem;
+  }
+
+  .contact-line {
+    font-size: 1rem;
+  }
+
+  textarea {
+    min-height: 140px;
+  }
+
+  /* AREA TAGS */
+
+  .area-tags {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding-bottom: 10px;
+  }
+
+  .area-tags::-webkit-scrollbar {
+    display: none;
+  }
+
+  .area-tags span {
+    white-space: nowrap;
+  }
+
+  /* FLOATING CALL */
+
+  .floating-call {
+    bottom: 18px;
+    right: 18px;
+    padding: 14px 18px;
+    font-size: 0.95rem;
+  }
+
+}
