@@ -1405,3 +1405,154 @@ footer{
   }
 
 }
+/* FINAL FIX: HOURS + CONTACT CLEAN DESIGN */
+
+.hours{
+  margin-top:80px;
+  margin-bottom:80px;
+}
+
+.hours-grid{
+  display:grid;
+  grid-template-columns:repeat(2, 1fr);
+  gap:20px;
+  margin-top:28px;
+}
+
+.hours-card{
+  background:linear-gradient(180deg,#242220,#1f1d1b);
+  border:1px solid var(--line);
+  border-radius:24px;
+  padding:28px;
+}
+
+.hours-card h3{
+  font-size:22px;
+  margin-bottom:10px;
+  color:var(--text);
+}
+
+.hours-card p{
+  font-size:18px;
+  line-height:1.6;
+  color:var(--muted);
+}
+
+.hours-note{
+  margin-top:18px;
+  background:rgba(217,185,138,0.10);
+  border:1px solid rgba(217,185,138,0.18);
+  border-radius:20px;
+  padding:18px 22px;
+  color:#ead8bb;
+  line-height:1.6;
+  font-size:15px;
+}
+
+/* CONTACT SECTION */
+
+.contact-box{
+  display:grid;
+  grid-template-columns:0.85fr 1.15fr;
+  gap:36px;
+  align-items:start;
+
+  background:linear-gradient(135deg,#242220,#1b1a18);
+  border:1px solid var(--line);
+  border-radius:34px;
+  padding:42px;
+}
+
+.contact-info{
+  max-width:430px;
+}
+
+.contact-info h2{
+  font-size:clamp(36px,4vw,54px);
+  line-height:1;
+  letter-spacing:-0.055em;
+  margin:14px 0 18px;
+}
+
+.contact-info p{
+  color:var(--muted);
+  line-height:1.7;
+  font-size:16px;
+  margin-bottom:24px;
+}
+
+.contact-lines{
+  display:grid;
+  gap:12px;
+}
+
+.contact-line{
+  background:rgba(255,255,255,0.06);
+  border:1px solid var(--line);
+  border-radius:16px;
+  padding:14px 16px;
+  color:#eadfd2;
+  font-weight:800;
+  font-size:15px;
+}
+
+.quote-form{
+  display:grid;
+  gap:14px;
+  width:100%;
+}
+
+.quote-form input,
+.quote-form select,
+.quote-form textarea{
+  width:100%;
+  background:#11100f;
+  border:1px solid var(--line);
+  color:white;
+  padding:16px 18px;
+  border-radius:16px;
+  font-size:16px;
+  font-weight:600;
+  outline:none;
+}
+
+.quote-form input::placeholder,
+.quote-form textarea::placeholder{
+  color:#9f978d;
+}
+
+.quote-form textarea{
+  min-height:150px;
+  resize:vertical;
+}
+
+.quote-form button{
+  margin-top:4px;
+}
+
+@media(max-width:768px){
+
+  .hours-grid{
+    grid-template-columns:1fr;
+  }
+
+  .contact-box{
+    grid-template-columns:1fr;
+    padding:24px;
+    gap:28px;
+  }
+
+  .contact-info{
+    max-width:100%;
+  }
+
+  .contact-info h2{
+    font-size:38px;
+  }
+
+  .quote-form input,
+  .quote-form select,
+  .quote-form textarea{
+    font-size:16px;
+  }
+}
