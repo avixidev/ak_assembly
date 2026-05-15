@@ -419,6 +419,8 @@
 
 <!-- CONTACT -->
 
+<!-- CONTACT -->
+
 <section id="contact" class="section contact">
 
   <div class="contact-box">
@@ -449,21 +451,18 @@
     </div>
 
     <form
-      action="https://formsubmit.co/akassemblyservices@gmail.com"
+      name="estimate"
       method="POST"
+      data-netlify="true"
       class="quote-form"
     >
 
-      <input
-        type="hidden"
-        name="_subject"
-        value="New Quote Request - AK Assembly Services"
-      >
+      <!-- REQUIRED FOR NETLIFY -->
 
       <input
         type="hidden"
-        name="_captcha"
-        value="false"
+        name="form-name"
+        value="estimate"
       >
 
       <input
@@ -487,20 +486,54 @@
         required
       >
 
-      <select name="service" required>
+      <select
+        name="service"
+        required
+      >
 
-        <option value="">Select Service</option>
+        <option value="">
+          Select Service
+        </option>
 
-        <option>TV Mounting</option>
-        <option>Furniture Assembly</option>
-        <option>Gym Equipment</option>
-        <option>Ceiling Fans</option>
-        <option>Shelves</option>
-        <option>Painting</option>
-        <option>Door Locks</option>
-        <option>Door Installation</option>
-        <option>Minor Plumbing</option>
-        <option>Other</option>
+        <option>
+          TV Mounting
+        </option>
+
+        <option>
+          Furniture Assembly
+        </option>
+
+        <option>
+          Gym Equipment
+        </option>
+
+        <option>
+          Ceiling Fans
+        </option>
+
+        <option>
+          Shelves
+        </option>
+
+        <option>
+          Painting
+        </option>
+
+        <option>
+          Door Locks
+        </option>
+
+        <option>
+          Door Installation
+        </option>
+
+        <option>
+          Minor Plumbing
+        </option>
+
+        <option>
+          Other
+        </option>
 
       </select>
 
@@ -510,7 +543,10 @@
         required
       ></textarea>
 
-      <button type="submit" class="btn primary">
+      <button
+        type="submit"
+        class="btn primary"
+      >
         Send Request
       </button>
 
